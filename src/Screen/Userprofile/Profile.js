@@ -7,7 +7,7 @@ import ProfileCard from '../../constant/ProfileCard';
 import PaymentCard from '../../constant/PaymentCard';
 import CustomButtoon from '../../constant/CustomButtoon';
 
-const Profile = () => {
+const Profile = ({navigation}) => {
   const data = [
     {
       id: 0,
@@ -33,7 +33,10 @@ const Profile = () => {
   ];
   return (
     <View style={styles.container}>
-      <CustomHeader Headertitle={'Profile'} />
+      <CustomHeader
+        Headertitle={'Profile'}
+        onPress={() => navigation.navigate('Main')}
+      />
       <View style={styles.mainView}>
         <ConstText
           title={'Information'}

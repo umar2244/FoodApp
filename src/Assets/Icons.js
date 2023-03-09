@@ -8,7 +8,7 @@ import Fontisto from 'react-native-vector-icons/Fontisto';
 import Octicons from 'react-native-vector-icons/Octicons';
 import React from 'react';
 
-const Icons = ({family, name, color, size, ...props}) => {
+const Icons = ({family, name, color, size, onPress, ...props}) => {
   let Family;
   switch (family) {
     case 'Octicons':
@@ -48,6 +48,7 @@ const Icons = ({family, name, color, size, ...props}) => {
       name={name || 'help-outline'}
       color={color || '#8e8e8e'}
       size={size || 14}
+      onPress={onPress}
       {...props}
     />
   );

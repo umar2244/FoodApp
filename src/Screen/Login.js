@@ -12,8 +12,10 @@ import image from '../Assets/images/image';
 import ConstText from '../constant/ConstText';
 import CustomInput from '../constant/CustomInput';
 import CustomButtoon from '../constant/CustomButtoon';
-
+import {useNavigation} from '@react-navigation/native';
 const Login = () => {
+  const navigation = useNavigation();
+
   const [line, setLine] = React.useState(false);
   const [Signup, setSignup] = React.useState(false);
   // const [line1, SetLine1] = React.useState(false);
@@ -89,6 +91,7 @@ const Login = () => {
             color={COLOR.white}
             Buttontitle={Signup ? 'Signup' : 'Login'}
             fontSize={17}
+            onPress={() => navigation.navigate('BottomStack')}
           />
         </View>
       </KeyboardAvoidingView>

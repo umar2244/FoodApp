@@ -53,7 +53,7 @@ export default MianprofileCard;
 
 const styles = StyleSheet.create({
   container: {
-    height: 197,
+    height: 183,
     width: 315,
     backgroundColor: COLOR.white,
     borderRadius: 20,

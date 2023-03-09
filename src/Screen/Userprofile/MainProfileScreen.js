@@ -6,7 +6,7 @@ import ConstText from '../../constant/ConstText';
 import MianprofileCard from '../../constant/MianprofileCard';
 import CustomButtoon from '../../constant/CustomButtoon';
 
-const MainProfileScreen = () => {
+const MainProfileScreen = ({navigation}) => {
   const data = [
     {
       id: 0,
@@ -37,7 +37,6 @@ const MainProfileScreen = () => {
         <ConstText
           title={'My profile'}
           color={COLOR.black}
-          marginTop={10}
           fontSize={30}
           fontWeight={'600'}
         />
@@ -48,6 +47,7 @@ const MainProfileScreen = () => {
             flexDirection: 'row',
             justifyContent: 'space-between',
             alignItems: 'center',
+            marginTop: -6,
           }}>
           <ConstText
             color={COLOR.black}
@@ -60,6 +60,7 @@ const MainProfileScreen = () => {
             title={'Change'}
             alignSelf={'center'}
             fontSize={12}
+            onPress={() => navigation.navigate('Profile')}
           />
         </View>
         <MianprofileCard />

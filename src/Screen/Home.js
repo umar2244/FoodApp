@@ -18,7 +18,7 @@ import Searchbar from '../constant/Searchbar';
 import HomeCard from '../constant/HomeCard';
 import image from '../Assets/images/image';
 
-const Home = () => {
+const HomeScreen = () => {
   const Data = [
     {
       id: 1,
@@ -177,7 +177,7 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeScreen;
 
 const styles = StyleSheet.create({
   Container: {

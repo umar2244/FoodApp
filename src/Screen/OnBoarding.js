@@ -47,6 +47,7 @@ const OnBoarding = ({navigation}) => {
           fontSize={17}
           height={50}
           onPress={() => navigation.navigate('Login')}
+          Buttontitle={'Get Started'}
         />
       </View>
     </SafeAreaView>

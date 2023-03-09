@@ -24,7 +24,7 @@ const CustomInput = ({
   return (
     <View
       style={{
-        marginBottom: marginBottom || 20,
+        marginBottom: marginBottom || 17,
         marginTop: marginTop || 0,
       }}>
       <ConstText

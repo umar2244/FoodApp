@@ -17,8 +17,10 @@ import {Font} from '../Assets/fonts';
 import Searchbar from '../constant/Searchbar';
 import HomeCard from '../constant/HomeCard';
 import image from '../Assets/images/image';
+import {DrawerActions, useNavigation} from '@react-navigation/native';
 
 const HomeScreen = () => {
+  const navigation = useNavigation();
   const Data = [
     {
       id: 1,
@@ -70,7 +72,12 @@ const HomeScreen = () => {
   return (
     <SafeAreaView style={styles.Container}>
       <View style={styles.headerView}>
-        <Octicons name="three-bars" size={22} color={COLOR.black} />
+        <Octicons
+          name="three-bars"
+          size={22}
+          color={COLOR.black}
+          onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
+        />
         <Feather name="shopping-cart" size={22} />
       </View>
       <View style={styles.mianView}>
